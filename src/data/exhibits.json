@@ -1,0 +1,46 @@
+{
+  "exhibits": [
+    {
+      "id": "exhibit1",
+      "title": "Thematic Exhibit 1",
+      "description": "A thematic grouping of heritage places for exhibit 1.",
+      "coverImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+      "places": ["place11", "place2", "place19", "place16", "place6"]
+    },
+    {
+      "id": "exhibit2",
+      "title": "Thematic Exhibit 2",
+      "description": "A thematic grouping of heritage places for exhibit 2.",
+      "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "places": ["place3", "place6", "place20", "place18", "place8"]
+    },
+    {
+      "id": "exhibit3",
+      "title": "Thematic Exhibit 3",
+      "description": "A thematic grouping of heritage places for exhibit 3.",
+      "coverImage": "https://images.unsplash.com/photo-1470770903676-69b98201ea1c",
+      "places": ["place19", "place8", "place2"]
+    },
+    {
+      "id": "exhibit4",
+      "title": "Thematic Exhibit 4",
+      "description": "A thematic grouping of heritage places for exhibit 4.",
+      "coverImage": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
+      "places": ["place14", "place19", "place17"]
+    },
+    {
+      "id": "exhibit5",
+      "title": "Thematic Exhibit 5",
+      "description": "A thematic grouping of heritage places for exhibit 5.",
+      "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "places": ["place7", "place11", "place8", "place9"]
+    },
+    {
+      "id": "exhibit6",
+      "title": "Thematic Exhibit 6",
+      "description": "A thematic grouping of heritage places for exhibit 6.",
+      "coverImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+      "places": ["place10", "place15", "place11"]
+    }
+  ]
+}

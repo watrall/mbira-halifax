@@ -1,0 +1,292 @@
+{
+  "places": [
+    {
+      "id": "place1",
+      "name": "Heritage Site 1",
+      "description": "Sample description for Heritage Site 1, representing natural heritage significance in the Halifax area.",
+      "coordinates": [44.651589, -63.5847],
+      "category": "Natural Heritage",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "gallery": [
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+        ],
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "model3D": "https://sketchfab.com/models/1b1a3f2a4e8c4b889b8b8b8b8b8b8b8b/embed"
+      }
+    },
+    {
+      "id": "place2",
+      "name": "Heritage Site 2",
+      "description": "Sample description for Heritage Site 2, representing architecture significance in the Halifax area.",
+      "coordinates": [44.643173, -63.575093],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7",
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+      }
+    },
+    {
+      "id": "place3",
+      "name": "Heritage Site 3",
+      "description": "Sample description for Heritage Site 3, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.63893, -63.569084],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/camera-shutter-click-01.wav",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      }
+    },
+    {
+      "id": "place4",
+      "name": "Heritage Site 4",
+      "description": "Sample description for Heritage Site 4, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.650875, -63.569057],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7",
+        "gallery": [
+          "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+        ]
+      }
+    },
+    {
+      "id": "place5",
+      "name": "Heritage Site 5",
+      "description": "Sample description for Heritage Site 5, representing architecture significance in the Halifax area.",
+      "coordinates": [44.650347, -63.571109],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "gallery": [
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+        ]
+      }
+    },
+    {
+      "id": "place6",
+      "name": "Heritage Site 6",
+      "description": "Sample description for Heritage Site 6, representing archaeology significance in the Halifax area.",
+      "coordinates": [44.647868, -63.568518],
+      "category": "Archaeology",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        ],
+        "model3D": "https://sketchfab.com/models/85b4b8c2f8a44e8a9b8b8b8b8b8b8b8b/embed"
+      }
+    },
+    {
+      "id": "place7",
+      "name": "Heritage Site 7",
+      "description": "Sample description for Heritage Site 7, representing natural heritage significance in the Halifax area.",
+      "coordinates": [44.643696, -63.575955],
+      "category": "Natural Heritage",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "model3D": "https://sketchfab.com/models/1b1a3f2a4e8c4b889b8b8b8b8b8b8b8b/embed"
+      }
+    },
+    {
+      "id": "place8",
+      "name": "Heritage Site 8",
+      "description": "Sample description for Heritage Site 8, representing architecture significance in the Halifax area.",
+      "coordinates": [44.654901, -63.577177],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      }
+    },
+    {
+      "id": "place9",
+      "name": "Heritage Site 9",
+      "description": "Sample description for Heritage Site 9, representing natural heritage significance in the Halifax area.",
+      "coordinates": [44.657091, -63.576023],
+      "category": "Natural Heritage",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+        "gallery": [
+          "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7"
+        ]
+      }
+    },
+    {
+      "id": "place10",
+      "name": "Heritage Site 10",
+      "description": "Sample description for Heritage Site 10, representing archaeology significance in the Halifax area.",
+      "coordinates": [44.64604, -63.565253],
+      "category": "Archaeology",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7",
+        "gallery": [
+          "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+          "https://images.unsplash.com/photo-1503264116251-35a269479413"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+      }
+    },
+    {
+      "id": "place11",
+      "name": "Heritage Site 11",
+      "description": "Sample description for Heritage Site 11, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.640071, -63.577568],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7",
+        "gallery": [
+          "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/camera-shutter-click-01.wav"
+      }
+    },
+    {
+      "id": "place12",
+      "name": "Heritage Site 12",
+      "description": "Sample description for Heritage Site 12, representing architecture significance in the Halifax area.",
+      "coordinates": [44.644137, -63.572381],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+        "gallery": [
+          "https://images.unsplash.com/photo-1614852207131-4c0a3fbc3755",
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+        ],
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      }
+    },
+    {
+      "id": "place13",
+      "name": "Heritage Site 13",
+      "description": "Sample description for Heritage Site 13, representing maritime significance in the Halifax area.",
+      "coordinates": [44.640928, -63.572694],
+      "category": "Maritime",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1470770903676-69b98201ea1c",
+        "gallery": [
+          "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+      }
+    },
+    {
+      "id": "place14",
+      "name": "Heritage Site 14",
+      "description": "Sample description for Heritage Site 14, representing natural heritage significance in the Halifax area.",
+      "coordinates": [44.641037, -63.57794],
+      "category": "Natural Heritage",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "gallery": [
+          "https://images.unsplash.com/photo-1470770903676-69b98201ea1c"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/camera-shutter-click-01.wav"
+      }
+    },
+    {
+      "id": "place15",
+      "name": "Heritage Site 15",
+      "description": "Sample description for Heritage Site 15, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.649454, -63.582685],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7",
+        "gallery": [
+          "https://images.unsplash.com/photo-1612831660379-b89a0d9e90c7"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+      }
+    },
+    {
+      "id": "place16",
+      "name": "Heritage Site 16",
+      "description": "Sample description for Heritage Site 16, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.652597, -63.570941],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "gallery": [
+          "https://images.unsplash.com/photo-1614852207131-4c0a3fbc3755"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/camera-shutter-click-01.wav",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "model3D": "https://sketchfab.com/models/85b4b8c2f8a44e8a9b8b8b8b8b8b8b8b/embed"
+      }
+    },
+    {
+      "id": "place17",
+      "name": "Heritage Site 17",
+      "description": "Sample description for Heritage Site 17, representing architecture significance in the Halifax area.",
+      "coordinates": [44.643402, -63.580796],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+          "https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+        ],
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "model3D": "https://sketchfab.com/models/4a2b1c3d5e6f4a8b9c0d1e2f3a4b5c6d/embed"
+      }
+    },
+    {
+      "id": "place18",
+      "name": "Heritage Site 18",
+      "description": "Sample description for Heritage Site 18, representing maritime significance in the Halifax area.",
+      "coordinates": [44.643085, -63.582554],
+      "category": "Maritime",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1470770903676-69b98201ea1c",
+        "gallery": [
+          "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+          "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+      }
+    },
+    {
+      "id": "place19",
+      "name": "Heritage Site 19",
+      "description": "Sample description for Heritage Site 19, representing architecture significance in the Halifax area.",
+      "coordinates": [44.647022, -63.567923],
+      "category": "Architecture",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "gallery": [
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+        ],
+        "model3D": "https://sketchfab.com/models/1b1a3f2a4e8c4b889b8b8b8b8b8b8b8b/embed"
+      }
+    },
+    {
+      "id": "place20",
+      "name": "Heritage Site 20",
+      "description": "Sample description for Heritage Site 20, representing cultural spaces significance in the Halifax area.",
+      "coordinates": [44.642604, -63.576228],
+      "category": "Cultural Spaces",
+      "media": {
+        "heroImage": "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+        "gallery": [
+          "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        ],
+        "audio": "https://www.soundjay.com/misc/sounds/camera-shutter-click-01.wav",
+        "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+      }
+    }
+  ]
+}

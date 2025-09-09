@@ -1,0 +1,84 @@
+{
+  "explorations": [
+    {
+      "id": "exploration1",
+      "name": "Exploration Route 1",
+      "description": "A sequential path highlighting archaeology and cultural narratives.",
+      "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "stops": [
+        { "placeId": "place9", "order": 1 },
+        { "placeId": "place2", "order": 2 },
+        { "placeId": "place5", "order": 3 },
+        { "placeId": "place19", "order": 4 },
+        { "placeId": "place20", "order": 5 }
+      ],
+      "polyline": [
+        [44.657091, -63.576023],
+        [44.643173, -63.575093],
+        [44.650347, -63.571109],
+        [44.647022, -63.567923],
+        [44.642604, -63.576228]
+      ]
+    },
+    {
+      "id": "exploration2",
+      "name": "Exploration Route 2",
+      "description": "A sequential path highlighting natural heritage and cultural narratives.",
+      "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "stops": [
+        { "placeId": "place15", "order": 1 },
+        { "placeId": "place11", "order": 2 },
+        { "placeId": "place10", "order": 3 },
+        { "placeId": "place12", "order": 4 },
+        { "placeId": "place13", "order": 5 }
+      ],
+      "polyline": [
+        [44.649454, -63.582685],
+        [44.640071, -63.577568],
+        [44.64604, -63.565253],
+        [44.644137, -63.572381],
+        [44.640928, -63.572694]
+      ]
+    },
+    {
+      "id": "exploration3",
+      "name": "Exploration Route 3",
+      "description": "A sequential path highlighting architecture and cultural narratives.",
+      "coverImage": "https://images.unsplash.com/photo-1470770903676-69b98201ea1c",
+      "stops": [
+        { "placeId": "place3", "order": 1 },
+        { "placeId": "place1", "order": 2 },
+        { "placeId": "place7", "order": 3 },
+        { "placeId": "place18", "order": 4 },
+        { "placeId": "place4", "order": 5 }
+      ],
+      "polyline": [
+        [44.63893, -63.569084],
+        [44.651589, -63.5847],
+        [44.643696, -63.575955],
+        [44.643085, -63.582554],
+        [44.650875, -63.569057]
+      ]
+    },
+    {
+      "id": "exploration4",
+      "name": "Exploration Route 4",
+      "description": "A sequential path highlighting maritime and cultural narratives.",
+      "coverImage": "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+      "stops": [
+        { "placeId": "place17", "order": 1 },
+        { "placeId": "place16", "order": 2 },
+        { "placeId": "place14", "order": 3 },
+        { "placeId": "place6", "order": 4 },
+        { "placeId": "place8", "order": 5 }
+      ],
+      "polyline": [
+        [44.643402, -63.580796],
+        [44.652597, -63.570941],
+        [44.641037, -63.57794],
+        [44.647868, -63.568518],
+        [44.654901, -63.577177]
+      ]
+    }
+  ]
+}
