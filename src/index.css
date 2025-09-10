@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: theme('colors.textPrimary');
-  background-color: theme('colors.background');
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,3 +80,7 @@ img {
   to { transform: translateY(0); opacity: 1; }
 }
 .animate-sheet-up { animation: sheet-up var(--anim-normal) var(--anim-ease); }
+
+/* Hide scrollbars utility for overflow chips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

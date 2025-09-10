@@ -15,6 +15,7 @@ import placesData from './data/places.json';
 import explorationsData from './data/explorations.json';
 import exhibitsData from './data/exhibits.json';
 import './App.css';
+import BottomNav from './components/BottomNav';
 
 function AppContent() {
   const location = useLocation();
@@ -40,7 +41,7 @@ function AppContent() {
         showSearch={showSearchBar}
         onSearchChange={setSearchTerm}
       />
-      <main className="flex-grow">
+      <main className="flex-grow pb-16">
         <Routes>
           <Route path="/" element={<LandingPage project={project} places={places} />} />
           <Route path="/places" element={<PlacesList places={places} searchTerm={searchTerm} />} />
@@ -52,6 +53,7 @@ function AppContent() {
           <Route path="/about" element={<AboutPage project={project} />} />
         </Routes>
       </main>
+      <BottomNav />
     </div>
   );
 }

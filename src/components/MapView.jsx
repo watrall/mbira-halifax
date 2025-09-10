@@ -5,6 +5,8 @@ import { MapContainer, TileLayer, Marker, Popup, Polygon } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { findPlaceById } from '../utils';
+import categories from '../data/categories.json';
+import SearchBar from './ui/SearchBar';
 import BottomSheet from './BottomSheet';
 import Fab from './ui/Fab';
 
@@ -47,6 +49,8 @@ export default function MapView({
   const [filteredPlaces, setFilteredPlaces] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [userLocation] = useState([44.65, -63.57]);
+  const [localQuery, setLocalQuery] = useState('');
+  const [activeCategory, setActiveCategory] = useState('All');
 
   useEffect(() => {
     let result = places;
@@ -65,17 +69,22 @@ export default function MapView({
       }
     }
 
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
+    const combinedTerm = (localQuery || searchTerm || '').toLowerCase();
+
+    if (combinedTerm) {
       result = result.filter(place =>
-        place.name.toLowerCase().includes(term) ||
-        place.description.toLowerCase().includes(term) ||
-        place.category.toLowerCase().includes(term)
+        place.name.toLowerCase().includes(combinedTerm) ||
+        place.description.toLowerCase().includes(combinedTerm) ||
+        place.category.toLowerCase().includes(combinedTerm)
       );
     }
 
+    if (activeCategory && activeCategory !== 'All') {
+      result = result.filter((p) => p.category === activeCategory);
+    }
+
     setFilteredPlaces(result);
-  }, [places, explorations, exhibits, activeExplorationId, activeExhibitId, searchTerm]);
+  }, [places, explorations, exhibits, activeExplorationId, activeExhibitId, searchTerm, localQuery, activeCategory]);
 
   useEffect(() => {
     if (mapInstance && filteredPlaces.length > 0) {
@@ -98,6 +107,36 @@ export default function MapView({
 
   return (
     <div className="relative h-full w-full">
+      {/* Search overlay */}
+      <div className="absolute z-[1000] left-0 right-0 top-3 px-3">
+        <div className="mx-auto max-w-screen-sm">
+          <SearchBar
+            value={localQuery}
+            onChange={setLocalQuery}
+            placeholder="Search heritage places..."
+            data={places}
+            onSelect={(p) => {
+              setLocalQuery(p.name);
+              handleMarkerClick(p);
+            }}
+          />
+          <div className="mt-2 flex gap-2 overflow-x-auto no-scrollbar">
+            {['All', ...categories].map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-3 py-1.5 rounded-full text-sm shadow-low whitespace-nowrap ${
+                  activeCategory === cat
+                    ? 'bg-primary text-white'
+                    : 'bg-white text-textPrimary'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
       <MapContainer
         center={userLocation}
         zoom={13}
