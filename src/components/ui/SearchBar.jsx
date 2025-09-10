@@ -20,7 +20,7 @@ export default function SearchBar({
 
   return (
     <div className="relative">
-      <div className="flex items-center rounded-full bg-surface border px-3 py-2 shadow-low focus-within:ring-2 focus-within:ring-primary">
+      <div className="flex items-center h-12 rounded-full bg-surface border px-4 shadow-low focus-within:ring-2 focus-within:ring-primary">
         <span className="material-symbols-rounded text-gray-500 mr-2">search</span>
         <input
           value={value}
@@ -28,21 +28,21 @@ export default function SearchBar({
           onFocus={() => setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
           placeholder={placeholder}
-          className={`flex-1 bg-transparent outline-none text-sm ${
+          className={`flex-1 bg-transparent outline-none text-base ${
             error ? 'border-b border-error' : ''
           }`}
           aria-label={placeholder}
         />
       </div>
       {open && (
-        <div className="absolute z-20 mt-1 w-full bg-surface rounded-lg border shadow-high overflow-hidden">
+        <div className="absolute z-20 mt-2 w-full bg-surface rounded-xl border shadow-high overflow-hidden">
           {suggestions.length === 0 ? (
-            <div className="px-3 py-2 text-sm text-textSecondary">No places found</div>
+            <div className="px-3 py-3 text-sm text-textSecondary">No places found</div>
           ) : (
             suggestions.map((item) => (
               <button
                 key={item.id}
-                className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 ripple"
+                className="w-full text-left px-4 py-3 text-sm hover:bg-gray-50 ripple"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => onSelect?.(item)}
               >
@@ -55,4 +55,3 @@ export default function SearchBar({
     </div>
   );
 }
-

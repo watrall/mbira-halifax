@@ -43,14 +43,14 @@ function AppContent() {
       />
       <main className="flex-grow pb-16">
         <Routes>
-          <Route path="/" element={<LandingPage project={project} places={places} />} />
-          <Route path="/places" element={<PlacesList places={places} searchTerm={searchTerm} />} />
+          <Route path="/" element={<div className="mx-auto max-w-screen-sm"><LandingPage project={project} places={places} /></div>} />
+          <Route path="/places" element={<div className="mx-auto max-w-screen-sm"><PlacesList places={places} searchTerm={searchTerm} /></div>} />
           <Route path="/places/:id" element={<PlaceDetailPage places={places} />} />
-          <Route path="/explorations" element={<ExplorationsList explorations={explorations} />} />
+          <Route path="/explorations" element={<div className="mx-auto max-w-screen-sm"><ExplorationsList explorations={explorations} /></div>} />
           <Route path="/explorations/:id" element={<ExplorationPage explorations={explorations} places={places} searchTerm={searchTerm} />} />
-          <Route path="/exhibits" element={<ExhibitsList exhibits={exhibits} />} />
+          <Route path="/exhibits" element={<div className="mx-auto max-w-screen-sm"><ExhibitsList exhibits={exhibits} /></div>} />
           <Route path="/exhibits/:id" element={<ExhibitDetailPage exhibits={exhibits} places={places} searchTerm={searchTerm} />} />
-          <Route path="/about" element={<AboutPage project={project} />} />
+          <Route path="/about" element={<div className="mx-auto max-w-screen-sm"><AboutPage project={project} /></div>} />
         </Routes>
       </main>
       <BottomNav />

@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function ExhibitsList({ exhibits }) {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-6">Exhibits</h1>
-      <p className="mb-6 text-gray-600">Discover curated collections of heritage places.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-4 pb-20">
+      <h1 className="text-2xl font-bold heading-font text-textPrimary mb-2">Exhibits</h1>
+      <p className="mb-4 text-textSecondary text-sm">Discover curated collections of heritage places.</p>
+      <div className="space-y-4">
         {exhibits.map((exhibit) => (
           <Link
             key={exhibit.id}
             to={`/exhibits/${exhibit.id}`}
-            className="block bg-white rounded-xl overflow-hidden shadow-card hover:shadow-lg transition-shadow"
+            className="block bg-surface rounded-2xl overflow-hidden shadow-card hover:shadow-high transition-shadow"
           >
-            <div className="h-48 overflow-hidden">
+            <div className="h-40 overflow-hidden">
               <img
                 src={exhibit.coverImage}
                 alt={exhibit.title}
@@ -21,8 +21,8 @@ export default function ExhibitsList({ exhibits }) {
               />
             </div>
             <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2">{exhibit.title}</h2>
-              <p className="text-gray-600">{exhibit.description}</p>
+              <h2 className="text-lg font-semibold text-textPrimary">{exhibit.title}</h2>
+              <p className="text-sm text-textSecondary line-clamp-2 mt-1">{exhibit.description}</p>
             </div>
           </Link>
         ))}

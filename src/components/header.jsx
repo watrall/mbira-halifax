@@ -20,8 +20,8 @@ export default function Header({ projectTitle, onSearchChange, showSearch = fals
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-surface shadow-low">
-      <div className="container mx-auto px-4 py-3 flex flex-col">
+    <header className="sticky top-0 z-40 bg-surface/95 backdrop-blur shadow-low">
+      <div className="mx-auto max-w-screen-sm px-4 py-3 flex flex-col">
         <div className="flex justify-between items-center mb-2">
           <Link
             to="/"
@@ -41,7 +41,7 @@ export default function Header({ projectTitle, onSearchChange, showSearch = fals
           <SearchBar
             value={searchTerm}
             onChange={handleSearchChange}
-            placeholder="Search places..."
+            placeholder="Search heritage places..."
           />
         )}
       </div>
