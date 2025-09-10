@@ -1,7 +1,7 @@
 // src/App.jsx
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/header';
 import LandingPage from './pages/LandingPage';
 import PlacesList from './pages/PlacesList';
 import PlaceDetailPage from './pages/PlaceDetailPage';
