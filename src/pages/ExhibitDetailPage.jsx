@@ -2,6 +2,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { findExhibitById, getPlacesForExhibit } from '../utils';
 import MapView from '../components/MapView';
+import Fab from '../components/ui/Fab';
 
 export default function ExhibitDetailPage({ exhibits, places, searchTerm }) {
   const { id } = useParams();
@@ -31,15 +32,18 @@ export default function ExhibitDetailPage({ exhibits, places, searchTerm }) {
         <div className="prose max-w-none text-textPrimary">
           <p>{exhibit.description}</p>
         </div>
-        <Link
-          to="."
-          className="mt-4 inline-block px-4 py-2 bg-primary text-white font-medium rounded-lg shadow-fab hover:bg-[#005060] active:scale-95 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-        >
-          Explore on Map
-        </Link>
+        <Fab
+          label="Explore on Map"
+          icon="map"
+          className="mt-4"
+          onClick={() => {
+            const el = document.getElementById('exhibit-map');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}
+        />
       </div>
 
-      <div className="flex-grow relative">
+      <div id="exhibit-map" className="flex-grow relative">
         <MapView
           places={places}
           exhibits={[exhibit]}

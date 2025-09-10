@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { findExplorationById, getPlacesForExploration, getCurrentStopIndex } from '../utils';
 import MapView from '../components/MapView';
+import Button from '../components/ui/Button';
 
 export default function ExplorationPage({ explorations, places, searchTerm }) {
   const { id } = useParams();
@@ -59,30 +60,12 @@ export default function ExplorationPage({ explorations, places, searchTerm }) {
             Stop {Math.max(1, currentIndex + 1)} of {explorationPlaces.length}
           </div>
           <div className="flex gap-2">
-            <button
-              onClick={handlePrevious}
-              disabled={isAtStart}
-              className={`px-3 py-1.5 rounded-full ${
-                isAtStart
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                  : 'bg-primary text-white hover:bg-[#005060] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
-              }`}
-              aria-label="Previous stop"
-            >
+            <Button onClick={handlePrevious} disabled={isAtStart} size="sm">
               Previous
-            </button>
-            <button
-              onClick={handleNext}
-              disabled={isAtEnd}
-              className={`px-3 py-1.5 rounded-full ${
-                isAtEnd
-                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                  : 'bg-primary text-white hover:bg-[#005060] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
-              }`}
-              aria-label="Next stop"
-            >
+            </Button>
+            <Button onClick={handleNext} disabled={isAtEnd} size="sm">
               Next
-            </button>
+            </Button>
           </div>
         </div>
       </div>

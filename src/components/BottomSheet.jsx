@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { IoClose } from 'react-icons/io5';
 import { useDrag } from '@use-gesture/react';
 import { useSpring, animated } from '@react-spring/web';
+import Fab from './ui/Fab';
 
 export default function BottomSheet({ place, onClose, onExplore }) {
   const [{ y }, api] = useSpring(() => ({ y: 100 }));
@@ -38,8 +39,8 @@ export default function BottomSheet({ place, onClose, onExplore }) {
 
           <animated.div
             {...bind()}
-            style={{ y, touchAction: 'none' }}
-            className="absolute bottom-0 left-0 right-0 bg-surface rounded-t-2xl shadow-sheet p-4 max-h-[70vh] overflow-y-auto pointer-events-auto flex flex-col"
+            style={{ transform: y.to((v) => `translateY(${v}px)`), touchAction: 'none' }}
+            className="absolute bottom-0 left-0 right-0 bg-surface rounded-t-2xl shadow-sheet p-4 max-h-[70vh] overflow-y-auto pointer-events-auto flex flex-col animate-sheet-up"
           >
             <div className="flex justify-center mb-2">
               <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
@@ -71,15 +72,15 @@ export default function BottomSheet({ place, onClose, onExplore }) {
               </button>
             </div>
 
-            <button
+            <Fab
+              label="View More"
+              icon="open_in_new"
+              className="self-start mt-auto"
               onClick={(e) => {
                 e.stopPropagation();
                 onExplore();
               }}
-              className="self-start mt-auto px-4 py-2 bg-primary text-white font-medium rounded-lg shadow-fab hover:bg-[#005060] active:scale-95 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-            >
-              Explore
-            </button>
+            />
           </animated.div>
         </motion.div>
       )}

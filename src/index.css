@@ -1,5 +1,6 @@
 /* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200');
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +16,67 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
 
+.heading-font { font-family: 'Inter', sans-serif; }
+
 img {
   @apply max-w-full h-auto;
 }
+
+/* Design tokens as CSS variables for non-Tailwind contexts */
+:root {
+  --color-primary: #0094BC;
+  --color-secondary: #049DC1;
+  --color-accent: #006494;
+  --color-background: #E8F4F7;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #0D474E;
+  --color-text-secondary: #484A50;
+  --overlay-polygon: rgba(0,148,188,0.3);
+
+  --elev-low: 0 1px 3px rgba(0,0,0,0.1);
+  --elev-med: 0 4px 6px rgba(0,0,0,0.1);
+  --elev-high: 0 10px 20px rgba(0,0,0,0.15);
+
+  --anim-fast: 150ms;
+  --anim-normal: 250ms;
+  --anim-slow: 400ms;
+  --anim-ease: ease-in-out;
+}
+
+/* Material Symbols usage helper */
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Rounded';
+}
+
+/* Ripple effect utility */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.35) 10%, transparent 10.01%) center/10px 10px;
+  opacity: 0;
+  transition: opacity var(--anim-fast) var(--anim-ease);
+}
+.ripple:active::after {
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Micro-animations */
+@keyframes bounce-in {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.animate-bounce-in { animation: bounce-in var(--anim-normal) var(--anim-ease); }
+
+@keyframes sheet-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-sheet-up { animation: sheet-up var(--anim-normal) var(--anim-ease); }

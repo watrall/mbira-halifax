@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#00697A',
+        primary: '#0094BC',
         secondary: '#049DC1',
-        accent: '#0094BC',
+        accent: '#006494',
         background: '#E8F4F7',
         surface: '#FFFFFF',
         textPrimary: '#0D474E',
         textSecondary: '#484A50',
-        overlayPolygon: 'rgba(0, 105, 122, 0.3)',
+        overlayPolygon: 'rgba(0,148,188,0.3)',
         error: '#B00020',
         success: '#4CAF50',
       },

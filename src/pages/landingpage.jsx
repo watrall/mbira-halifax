@@ -1,5 +1,6 @@
 // src/pages/LandingPage.jsx
 import { Link, useNavigate } from 'react-router-dom';
+import Fab from '../components/ui/Fab';
 import { getRandomPlace } from '../utils';
 
 export default function LandingPage({ project, places }) {
@@ -23,8 +24,16 @@ export default function LandingPage({ project, places }) {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-          <h1 className="text-white text-2xl md:text-3xl font-bold mb-2">{project.title}</h1>
+          <h1 className="text-white text-2xl md:text-3xl font-bold mb-2 heading-font">{project.title}</h1>
           <p className="text-white text-base md:text-lg">{project.shortDescription}</p>
+
+          <div className="mt-4 flex gap-2 flex-wrap">
+            <Fab label="Exhibits" icon="collections_bookmark" onClick={() => navigate('/exhibits')} />
+            <Fab label="Explorations" icon="route" onClick={() => navigate('/explorations')} />
+            <Fab label="All Places" icon="location_on" onClick={() => navigate('/places')} />
+            <Fab label="Random" icon="shuffle" onClick={handleRandomPlace} />
+            <Fab label="Learn More" icon="info" onClick={() => navigate('/about')} />
+          </div>
         </div>
       </div>
 
