@@ -1,4 +1,20 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: theme('colors.textPrimary');
+  background-color: theme('colors.background');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  @apply max-w-full h-auto;
+}
